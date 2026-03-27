@@ -61,4 +61,12 @@ src/
 - The landing page already uses a shadcn/ui component (`Button`) as the Welcome screen.
 - Environment variable template is defined in `.env.example`.
 
+## AI coding assistants
+
+Project-specific rules for any AI assistant (Cursor, Copilot, etc.) live in [`AGENTS.md`](./AGENTS.md). Point your tool’s “project rules” or workspace instructions at that file if supported.
+
+## Architecture decisions (ADR)
+
+Significant technical choices are recorded as [Architecture Decision Records](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions) in [`docs/adr/`](./docs/adr/README.md) (template + index).
+
 For Next.js docs, see [nextjs.org/docs](https://nextjs.org/docs).
