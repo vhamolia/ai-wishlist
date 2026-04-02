@@ -14,7 +14,7 @@ Yes. ADRs remain a common practice (popularized by Michael Nygard; variants incl
 
 ## Index
 
-| ADR | Title | Status |
-|-----|--------|--------|
-| [000](000-template.md) | Template | — |
+| ADR                                 | Title                                       | Status   |
+| ----------------------------------- | ------------------------------------------- | -------- |
+| [000](000-template.md)              | Template                                    | —        |
 | [001](001-use-nextjs-app-router.md) | Use Next.js App Router as the web framework | Accepted |
