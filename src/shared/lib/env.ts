@@ -1,6 +1,10 @@
 import "server-only";
 
-const REQUIRED_SERVER_ENV_KEYS = ["SUPABASE_SERVICE_ROLE_KEY", "GEMINI_API_KEY", "RESEND_API_KEY"] as const;
+const REQUIRED_SERVER_ENV_KEYS = [
+  "SUPABASE_SERVICE_ROLE_KEY",
+  "GEMINI_API_KEY",
+  "RESEND_API_KEY",
+] as const;
 
 export function getServerEnv() {
   const missingKeys = REQUIRED_SERVER_ENV_KEYS.filter((key) => !process.env[key]);

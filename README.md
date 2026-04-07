@@ -70,3 +70,17 @@ Project-specific rules for any AI assistant (Cursor, Copilot, etc.) live in [`AG
 Significant technical choices are recorded as [Architecture Decision Records](https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions) in [`docs/adr/`](./docs/adr/README.md) (template + index).
 
 For Next.js docs, see [nextjs.org/docs](https://nextjs.org/docs).
+
+## Committing Code
+
+This project enforces [Conventional Commits](https://www.conventionalcommits.org/). When making a commit, please format your message as:
+
+```
+type(scope): subject
+```
+
+For example:
+
+- `feat(wishlists): add share link`
+- `fix(auth): resolve login timeout issue`
+- `chore: update dependencies`
