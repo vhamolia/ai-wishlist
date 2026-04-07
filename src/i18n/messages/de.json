@@ -1,0 +1,20 @@
+{
+  "HomePage": {
+    "title": "Hallo Welt!"
+  },
+  "LocaleSwitcher": {
+    "locale": "{locale}",
+    "label": "Sprache wechseln"
+  },
+  "Navigation": {
+    "home": "Startseite"
+  },
+  "common": {},
+  "auth": {},
+  "errors": {
+    "notFound": "Nicht gefunden",
+    "notFoundDescription": "Die angeforderte Ressource konnte nicht gefunden werden",
+    "returnHome": "Zurück zur Startseite"
+  },
+  "marketing": {}
+}
