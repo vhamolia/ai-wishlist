@@ -1,15 +1,15 @@
 "use client";
 
 import { buttonVariants } from "@/components/ui/button";
-import { useTranslations } from "next-intl";
+import { useDictionary } from "@/hooks/useDictionary";
 
 export default function Home() {
-  const t = useTranslations("HomePage");
+  const { getTranslation } = useDictionary("HomePage");
 
   return (
     <main className="flex min-h-screen items-center justify-center bg-background px-6">
       <section className="w-full max-w-2xl rounded-xl border bg-card p-8 text-card-foreground shadow-sm">
-        <h1 className="text-3xl font-semibold tracking-tight">{t("title")}</h1>
+        <h1 className="text-3xl font-semibold tracking-tight">{getTranslation("title")}</h1>
         <p className="mt-3 text-muted-foreground">
           Foundation initialized with Next.js, TypeScript, Tailwind CSS v4, and shadcn/ui.
         </p>

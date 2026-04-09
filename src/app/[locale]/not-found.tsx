@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useDictionary } from "@/hooks/useDictionary";
 
 export default function NotFound() {
-  const t = useTranslations("errors");
+  const { getTranslation } = useDictionary("errors");
   return (
     <div>
       <section className="bg-white dark:bg-gray-900">
@@ -12,12 +12,12 @@ export default function NotFound() {
               404
             </h1>
             <p className="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl dark:text-white">
-              {t("notFound")}
+              {getTranslation("notFound")}
             </p>
             <p className="mb-4 text-lg font-light text-gray-500 dark:text-gray-400">
-              {t("notFoundDescription")}
+              {getTranslation("notFoundDescription")}
             </p>
-            <Link href="/">{t("returnHome")}</Link>
+            <Link href="/">{getTranslation("returnHome")}</Link>
           </div>
         </div>
       </section>

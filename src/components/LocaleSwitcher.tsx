@@ -2,7 +2,8 @@
 
 import clsx from "clsx";
 import { useParams } from "next/navigation";
-import { Locale, useLocale, useTranslations } from "next-intl";
+import { Locale, useLocale } from "next-intl";
+import { useDictionary } from "@/hooks/useDictionary";
 import { ChangeEvent, useTransition } from "react";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
@@ -12,7 +13,7 @@ export default function LocaleSwitcher() {
   const [isPending, startTransition] = useTransition();
   const pathname = usePathname();
   const params = useParams();
-  const t = useTranslations("LocaleSwitcher");
+  const { getTranslation } = useDictionary("LocaleSwitcher");
   const locale = useLocale();
 
   function onSelectChange(event: ChangeEvent<HTMLSelectElement>) {
@@ -35,7 +36,7 @@ export default function LocaleSwitcher() {
         isPending && "transition-opacity [&:disabled]:opacity-30"
       )}
     >
-      <p className="sr-only">{t("label")}</p>
+      <p className="sr-only">{getTranslation("label")}</p>
       <select
         className="inline-flex appearance-none bg-transparent py-3 pl-2 pr-6"
         defaultValue={locale}
@@ -44,7 +45,7 @@ export default function LocaleSwitcher() {
       >
         {routing.locales.map((cur) => (
           <option key={cur} value={cur}>
-            {t("locale", { locale: cur })}
+            {getTranslation("locale", { locale: cur })}
           </option>
         ))}
       </select>
