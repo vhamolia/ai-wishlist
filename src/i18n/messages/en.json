@@ -1,0 +1,20 @@
+{
+  "HomePage": {
+    "title": "Hello world!"
+  },
+  "LocaleSwitcher": {
+    "locale": "{locale}",
+    "label": "Change language"
+  },
+  "Navigation": {
+    "home": "Home"
+  },
+  "common": {},
+  "auth": {},
+  "errors": {
+    "notFound": "Not Found",
+    "notFoundDescription": "Could not find requested resource",
+    "returnHome": "Return Home"
+  },
+  "marketing": {}
+}
