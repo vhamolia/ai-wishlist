@@ -84,3 +84,20 @@ For example:
 - `feat(wishlists): add share link`
 - `fix(auth): resolve login timeout issue`
 - `chore: update dependencies`
+
+## CI
+
+GitHub Actions runs automatically on every pull request to `develop`.
+
+The pipeline runs:
+
+```bash
+
+pnpm lint
+
+pnpm typecheck
+
+pnpm test
+
+pnpm build
+```
