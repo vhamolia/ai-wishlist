@@ -87,7 +87,7 @@ For example:
 
 ## CI
 
-GitHub Actions runs automatically on every pull request to `develop`.
+GitHub Actions runs automatically on every pull request to `development`.
 
 The pipeline runs:
 
