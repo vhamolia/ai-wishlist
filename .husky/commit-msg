@@ -1,1 +1,6 @@
-npx --no-install commitlint --edit $1
+#!/bin/sh
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+pnpm exec commitlint --edit "$1"
